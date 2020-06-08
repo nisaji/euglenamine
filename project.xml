@@ -1,0 +1,49 @@
+<project type="bio">
+  <property name="target.model" value="genomic"/>
+  <property name="common.os.prefix" value="common"/>
+
+<sources>
+
+<source name="egracilis-fasta" type="fasta">
+  <property name="fasta.taxonId" value="3039"/>
+  <property name="fasta.dataSetTitle" value="Euglena gracilis chromosome genome"/>
+  <property name="fasta.dataSourceName" value="RIKEN"/>
+  <property name="fasta.className" value="org.intermine.model.bio.Chromosome"/>
+  <property name="fasta.includes" value="euglena_16Aug2019_NmnLY.100kb.fa"/>
+  <property name="src.data.dir" location="/home/dl-box/Egracilis/"/>
+  <property name="fasta.classAttribute" value="primaryIdentifier"/>
+  <property name="fasta.sequenceType" value="Chromosome"/>
+  <property name="fasta.licence" value="https://algae-tech.jp"/>
+</source>
+
+<!--
+<source name="egracilis-gff" type="gff">
+  <property name="gff3.taxonId" value="3039"/>
+  <property name="gff3.seqClsName" value="Chromosome"/>
+  <property name="gff3.dataSourceName" value="RIKEN"/>
+  <property name="gff3.dataSetTitle" value="Euglena gracilis genome"/>
+  <property name="src.data.dir" location="/home/dl-box/Egracilis/"/>
+  <property name="gff3.includes" value="transcripts.fasta.transdecoder.genome.gff3"/>
+  <property name="gff3.licence" value="https://algae-tech.jp/"/>
+</source>
+-->
+<source name="entrez-organism" type="entrez-organism">↲
+  <property name="src.data.file" location="organisms.xml"/>↲
+</source>
+
+</sources>
+
+
+<post-processing>
+  <post-process name="do-sources" />
+  <post-process name="transfer-sequences" />
+  <post-process name="create-references" />
+  <post-process name="create-attribute-indexes" />
+  <post-process name="summarise-objectstore" />
+  <post-process name="create-autocomplete-index" />
+  <!--<post-process name="populate-child-features"/>-->
+  <post-process name="create-search-index" />
+</post-processing>
+
+</project>
+

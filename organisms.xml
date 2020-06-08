@@ -1,0 +1,9 @@
+<items>
+<item id="-1_1" class="Organism">
+<attribute name="genus" value="Euglena"/>
+<attribute name="name" value="Euglena gracilis"/>
+<attribute name="shortName" value="E. gracilis"/>
+<attribute name="species" value="gracilis"/>
+<attribute name="taxonId" value="3039"/>
+</item>
+</items>
