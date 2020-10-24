@@ -34,10 +34,8 @@
   <post-process name="create-references" />
   <post-process name="create-attribute-indexes" />
   <post-process name="summarise-objectstore" />
-  <post-process name="create-autocomplete-index" />
-<!--  
+  <post-process name="create-autocomplete-index" /> 
   <post-process name="populate-child-features"/>
--->
   <post-process name="create-search-index" />
 </post-processing>
 
