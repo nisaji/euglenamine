@@ -26,6 +26,9 @@
 <property name="fasta.licence" value="https://algae-tech.jp"/>
 </source>
 
+<source name="entrez-organism" type="entrez-organism">↲
+  <property name="src.data.file" location="organisms.xml"/>↲
+</source>
 </sources>
 
 <post-processing>
