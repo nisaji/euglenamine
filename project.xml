@@ -4,13 +4,13 @@
 
 <sources>
 
-<source name="egracilis-gff" type="gff">
+<source name="egracilis-gff" type="egracilis-gff">
   <property name="gff3.taxonId" value="3039"/>
   <property name="gff3.seqClsName" value="Chromosome"/>
   <property name="gff3.dataSourceName" value="RIKEN"/>
   <property name="gff3.dataSetTitle" value="Euglena gracilis genome"/>
   <property name="src.data.dir" location="/home/dl-box/Egracilis/"/>
-  <property name="gff3.includes" value="transcripts.fasta.transdecoder.genome.sorted.gff3"/>
+  <property name="gff3.includes" value="transcripts.fasta.transdecoder.genome.gff3"/>
   <property name="gff3.licence" value="https://algae-tech.jp"/>
 </source>
 
