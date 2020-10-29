@@ -1,0 +1,2 @@
+# euglenamine
+* add jbrowse
